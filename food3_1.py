@@ -4,13 +4,12 @@ import random
 
 def food3():
   st.title("BMI에 따른 음식 및 운동 추천 웹")
-  hi = st.number_input("키를 입력해주세요 (cm): ",value=0)
-  we = st.number_input("몸무게를 입력해주세요 (kg): ",value=0)
+  hi = st.number_input("키를 입력해주세요 (cm): ",value=10)
+  we = st.number_input("몸무게를 입력해주세요 (kg): ",value=10)
  
-
   bmi = we / (hi / 100 * hi / 100)
   st.write(f"BMI: {bmi:.2f}")
-  #if hi>0 and we>0:
+ 
   if bmi > 25:
     st.write("비만입니다.")
   elif bmi >= 23:
