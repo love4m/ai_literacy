@@ -8,7 +8,7 @@ plt.rc('font',family ='malgun gothic')
 
 def basic():
     # 파일 불러오기
-    df = pd.read_csv('data\한국전력공사_지역별 전기차 현황정보_20230331.csv',encoding='EUc-kr')
+    df = pd.read_csv('한국전력공사_지역별 전기차 현황정보_20230331.csv',encoding='EUc-kr')
 
     # 피벗 해제(열의 데이터로 변환)
     df_melt = pd.melt(df,id_vars='기준일',value_vars=['서울', '인천', '경기', '강원', '충북', '충남', '대전', '세종', '경북', '대구', '전북',
